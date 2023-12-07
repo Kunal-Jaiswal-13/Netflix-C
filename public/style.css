@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html ::-webkit-scrollbar-track{
+    background: transparent;
+}
+html ::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 10px;
+}
+html ::-webkit-scrollbar{
+    width: 10px;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 20%;
+    height: 70px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    width: 30%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img{
+    height: 60px;
+}
+
+.search-bar{
+    width: 80%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+.search-box{
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+    text-indent: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.search-icon{
+    height: 25px;
+    padding-right: 10px;
+}
+
+.movies{
+    width: 100%;
+    padding: 50px 5%; /*top-bottom  left-right*/
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6.66%;
+    row-gap: 20px;
+}
+
+.movie{
+    width: 20%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.video{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+}
+
+.details{
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.poster{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 80px;
+        padding: 0.1% 10%;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .search {
+        width: 50%;
+    }
+
+    .search-bar {
+        width: 70%;
+    }
+
+    .search-box {
+        font-size: 14px;
+    }
+
+    .movies {
+        padding: 30px 5%;
+    }
+
+    .movie {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        height: 130px;
+        padding: 5% 8%;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .search {
+        width: 70%;
+    }
+
+    .search-bar {
+        width: 80%;
+    }
+
+    .search-box {
+        font-size: 12px;
+    }
+
+    .movies {
+        padding: 20px 5%;
+    }
+
+    .movie {
+        width: 90%;
+    }
+}
