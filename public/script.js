@@ -174,7 +174,6 @@ let movies = [
         `<div class="movie">
               <div class="overlay">
                   <div class="video">
-  
                   </div>
   
                   <div class="details">
